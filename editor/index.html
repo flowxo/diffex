@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diffex live editor</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <h1>Diff Extract Test Page</h1>
+    <p>Use this tool to test the functionality of the diffex tool.</p>
+    <p>Enter your template and sample input text, and press the button to show the results!</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="template">Template</label>
+          <textarea class="form-control" style="height: 400px;" id="template">Hello, {{name}}!</textarea>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="input">Input text</label>
+          <textarea class="form-control" style="height: 400px;" id="input">Hello, world!</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button class="btn" id="extract">Extract!</button>
+    </div>
+    <h3>Results:</h3>
+    <pre id="result"></pre>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
