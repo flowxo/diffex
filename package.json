@@ -1,0 +1,31 @@
+{
+  "name": "diffex",
+  "version": "1.0.0",
+  "description": "A tool to extract key-value pairs by comparing a template with an input string.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowxo/diffex.git"
+  },
+  "keywords": [
+    "diff",
+    "extract",
+    "text"
+  ],
+  "author": "Tom Spencer <fiznool@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/flowxo/diffex/issues"
+  },
+  "homepage": "https://github.com/flowxo/diffex#readme",
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  },
+  "dependencies": {
+    "lodash.defaults": "^3.1.2",
+    "lodash.isstring": "^3.0.1"
+  }
+}
