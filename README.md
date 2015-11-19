@@ -18,7 +18,7 @@ var diffex = require('diffex');
 var template = 'Hello, {{name}}!';
 var input = 'Hello, Bob!';
 
-var output = diffex(template, input);
+var output = diffex(input, template);
 
 // output -> { name: 'Bob' }
 ```
