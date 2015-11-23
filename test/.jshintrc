@@ -18,7 +18,6 @@
   "smarttabs": true,
   "globals": {
     "describe": false,
-    "it": false,
-    "expect": false
+    "it": false
   }
 }

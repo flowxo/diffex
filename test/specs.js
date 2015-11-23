@@ -1,11 +1,13 @@
 'use strict';
 
-var diffex = require('../lib/index.js');
+var chai = require('chai'),
+    expect = chai.expect,
+    diffex = require('../lib/index.js');
 
-describe('Get Interpolated Values via Template', function() {
+describe('Parse', function() {
   var runTest = function(template, input, expected) {
-    var actual = diffex(input, template);
-    expect(actual).toEqual(expected);
+    var actual = diffex(template).parse(input);
+    expect(actual).to.eql(expected);
   };
 
   it('should get a single variable from a template', function() {
@@ -229,5 +231,30 @@ describe('Get Interpolated Values via Template', function() {
     };
 
     runTest(template, input, expected);
+  });
+});
+
+describe('Placeholder', function() {
+  var runTest = function(template, expected) {
+    var actual = diffex(template).placeholders();
+    expect(actual).to.eql(expected);
+  };
+
+  it('should return an array of placeholder names', function() {
+    var template = 'Hi there {{name}}, today is {{today}} and tomorrow is {{tomorrow}}.';
+    var expected = ['name', 'today', 'tomorrow'];
+    runTest(template, expected);
+  });
+
+  it('should return an empty array if there are no placeholders', function() {
+    var template = 'No placeholders here!';
+    var expected = [];
+    runTest(template, expected);
+  });
+
+  it('should return an empty array if the template is not a string', function() {
+    var template = null;
+    var expected = [];
+    runTest(template, expected);
   });
 });
