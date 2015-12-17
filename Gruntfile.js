@@ -2,22 +2,19 @@
 
 module.exports = function (grunt) {
 
-  var pkg = grunt.file.readJSON('package.json');
-
   // Load grunt tasks automatically, when needed
   require('jit-grunt')(grunt, {
-    buildcontrol: 'grunt-build-control',
-    browserify: 'grunt-browserify'
+    buildcontrol: 'grunt-build-control'
   });
 
   grunt.initConfig({
     clean: {
-      editor: ['dist']
+      demo: ['build']
     },
     copy: {
-      editor: {
+      demo: {
         files: {
-          'dist/index.html': ['editor/index.html']
+          'build/index.html': ['demo/index.html']
         }
       }
     },
@@ -28,29 +25,45 @@ module.exports = function (grunt) {
           'diffex': './lib/index.js'
         }
       },
-      editor: {
+      demo: {
         files: {
-          'dist/bundle.js': ['lib/*.js', 'editor/*.js']
+          'build/bundle.js': ['demo/index.js']
+        },
+        options: {
+          watch: true
         }
       }
     },
 
-    uglify: {
-      editor: {
-        src: 'dist/bundle.js',
-        dest: 'dist/bundle.min.js'
+    connect: {
+      dev: {
+        options: {
+          base: 'build',
+          hostname: 'localhost',
+          port: 3000,
+          livereload: true
+        }
+      }
+    },
+
+    watch: {
+      dev: {
+        files: 'build/bundle.js',
+        options: {
+          livereload: true
+        }
       }
     },
 
     buildcontrol: {
       options: {
-        dir: 'dist',
+        dir: 'build',
         commit: true,
         push: true,
         connectCommits: false,
-        message: 'Built live editor from commit %sourceCommit%'
+        message: 'Built live demo from commit %sourceCommit%'
       },
-      editor: {
+      demo: {
         options: {
           remote: 'git@github.com:flowxo/diffex.git',
           branch: 'gh-pages',
@@ -59,6 +72,8 @@ module.exports = function (grunt) {
     },
   });
 
-  grunt.registerTask('build', ['clean', 'copy', 'browserify', 'uglify']);
+  grunt.registerTask('build', ['clean', 'copy', 'browserify']);
+  grunt.registerTask('serve', ['build', 'connect', 'watch']);
   grunt.registerTask('deploy', ['build', 'buildcontrol']);
+  grunt.registerTask('default', ['serve']);
 };

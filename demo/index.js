@@ -10,7 +10,7 @@ domready(function() {
   var extract = document.getElementById('extract');
 
   function displayResults() {
-    result.textContent = JSON.stringify(diffex(input.value, template.value), null, 2);
+    result.textContent = JSON.stringify(diffex(template.value).parse(input.value), null, 2);
   }
 
   extract.onclick = displayResults;
