@@ -122,7 +122,10 @@ describe('Parse', function() {
     runTest(template, input, expected);
   });
 
-  it('should support line breaks in different places, #1', function() {
+  // Line breaks in different places tests - these are
+  // commented out since we are only targeting transactional
+  // emails, and these should not be messing with line breaks.
+  /*it('should support line breaks in different places, #1', function() {
     // This is to support email clients who add a
     // newline at specific intervals in the text.
     // We could therefore end up with the template
@@ -152,7 +155,7 @@ describe('Parse', function() {
     };
 
     runTest(template, input, expected);
-  });
+  });*/
 
   it('should support line breaks inside the value', function() {
     var template = 'Hello, {{name}}';
@@ -228,6 +231,18 @@ describe('Parse', function() {
       company: 'ABC \nfor Limited',
       amount: '60',
       date: '07/10/2015'
+    };
+
+    runTest(template, input, expected);
+  });
+
+  it('should parse a subject concatenated with a body, with a different subject', function() {
+    var template = 'Subject\n\nFirst Name: {{First_Name}}\nLast Name: {{Last_Name}}\nEmail: {{Email}}';
+    var input = 'Different Subject\n\nFirst Name: X\nLast Name: Y\nEmail: Z';
+    var expected = {
+      First_Name: 'X',
+      Last_Name: 'Y',
+      Email: 'Z'
     };
 
     runTest(template, input, expected);
