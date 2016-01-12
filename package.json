@@ -1,6 +1,6 @@
 {
   "name": "diffex",
-  "version": "1.0.0-alpha2",
+  "version": "1.0.0-alpha3",
   "description": "A tool to extract key-value pairs by comparing a template with an input string.",
   "main": "lib/index.js",
   "scripts": {
