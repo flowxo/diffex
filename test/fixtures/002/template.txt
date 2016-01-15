@@ -1,0 +1,85 @@
+Amazon.co.uk Dispatch Confirmation
+Order #123-1234567-1234567
+https://www.amazon.co.uk/ref=TE_tex_g
+
+___________________________________________________________________________
+
+Hello,
+
+As per your request, we've dispatched a portion of your order; the remaining item(s) will be dispatched once available.
+
+Arriving:
+{{arriving}}
+
+
+Track your item(s): {{tracking_url}}
+
+Your order was sent to the following address:
+
+Ned Flanders
+740 Evergreen Terrace
+Springfield
+USA
+
+Your item(s) is (are) being sent by Amazon Logistics. Your tracking number is Q12345612345. Depending on the delivery method you chose, it's possible that the tracking information might not be visible immediately.
+
+To understand more about tracking, please visit our Help page: https://www.amazon.co.uk/tracking?ref=TE_tex_tra
+============================================================================
+
+Delivery Information
+
+1 X Ioven Silicone Spatulas - 10 Inch (Set of 4) Durable, Attractive, Dishwasher Safe, Soft and Flexible - Won't Chip Crack Dent or Rust Heat Resistant Ki
+Sold by Funlife
+£6.99
+
+1 X Varta CR 2032 Electronic Batteries
+Sold by Amazon EU S.a.r.L.
+£3.44
+
+1 X Master Class Electric Battery Operated Gas Lighter
+Sold by Amazon EU S.a.r.L.
+£7.50
+___________________________________________________________________________
+
+Item Subtotal: £16.11
+Postage & Packing: £0.00
+Total before VAT: £16.11
+VAT: £1.82
+Total: £17.93
+Paid by Visa: £17.93
+
+You've only been charged for the item(s) dispatched in this delivery. As per our policy, you only pay for items when we dispatch them to you.
+============================================================================
+
+Items dispatching soon
+Order #456-1234567-1234567
+Placed on January 11, 2016
+
+  Estimated delivery date: Wednesday, January 13
+  1X D-Line Medium Cable Tidy Tube - Black
+  1X Kinzo 72113 100x Cable Ties 4.5 x 120 mm
+  1X CPL Homefire Kindling Approx 3.5Kg
+  1X Comma SW5L 5L All Seasons Screen Wash
+
+ ___________________________________________________________________________
+
+It's easy to return an item. Visit our Online Returns Centre:
+https://www.amazon.co.uk/returns-support?ref=TE_tex_r
+
+If you need further assistance with your order, please visit our Customer Service Help page at: https://www.amazon.co.uk/customerservice?ref=TE_tex_cs
+
+We hope to see you again soon.
+Amazon.co.uk
+___________________________________________________________________________
+
+You can cancel this order within 14 days, beginning from the day you receive the product (subject to certain exceptions: https://www.amazon.co.uk/gp/help/customer/display/detail.html?nodeId=1040616). We will reimburse all payments received from you for the goods purchased and will also reimburse outbound delivery charges (for the least expensive type of delivery offered by us). You will be responsible for the cost of returning the product to us unless we delivered it to you in error, it is faulty, or you purchased shoes, clothing and accessories (check our Returns Policy: https://www.amazon.co.uk/gp/help/customer/display/detail.html?nodeId=1161002).You may be subject to increased return costs if the product cant be returned normally by post.
+
+You can request a cancellation by visiting our Returns Support Centre: https://www.amazon.co.uk/returns; by contacting us: www.amazon.co.uk/contactus; or completing this form: https://www.amazon.co.uk/cancellationform and sending it by post.
+
+Please also see our Returns Policy: https://www.amazon.co.uk/gp/help/customer/display/detail.html?nodeId=1161002 to learn more about our 30 day returns guarantee which outlines that you can return items for a full refund of the item price within 30 days.
+
+Amazon EU société à responsabilité limitée, 5 rue Plaetis, L-2338 Luxembourg. Share capital: EUR 37,500. RCS Luxembourg Number: B 101818. Business License Number: 134248. Luxembourg VAT Registration Number: LU 20260743.
+
+Learn more about your statutory rights here: https://www.amazon.co.uk/StatutoryRights?ref=TE_tex_sr.
+
+Please note: This email was sent from a notification-only address that can't accept incoming email. Please do not reply to this message.

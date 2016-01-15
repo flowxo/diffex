@@ -1,6 +1,8 @@
 'use strict';
 
-var chai = require('chai'),
+var fs = require('fs'),
+    path = require('path'),
+    chai = require('chai'),
     expect = chai.expect,
     diffex = require('../lib/index.js');
 
@@ -271,5 +273,29 @@ describe('Placeholder', function() {
     var template = null;
     var expected = [];
     runTest(template, expected);
+  });
+});
+
+function getDirectories(srcpath) {
+  return fs.readdirSync(srcpath).filter(function(file) {
+    return fs.statSync(path.join(srcpath, file)).isDirectory();
+  });
+}
+
+describe('Fixtures', function() {
+  // Loop through all of the fixtures.
+  var fixtures = getDirectories(path.join(__dirname, 'fixtures'));
+  fixtures.forEach(function(f) {
+    var readFile = function(file) {
+      return fs.readFileSync(path.join(__dirname, 'fixtures', f, file), 'utf8');
+    };
+
+    it('should parse fixture #' + f + ' successfully', function() {
+      var input = readFile('input.txt');
+      var template = readFile('template.txt');
+      var expected = JSON.parse(readFile('expected.json'));
+      var actual = diffex(template).parse(input);
+      expect(actual).to.eql(expected);
+    });
   });
 });

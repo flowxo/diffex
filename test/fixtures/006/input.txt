@@ -1,0 +1,11 @@
+Repository transfer request: some/other-repo
+
+Brick has initiated a transfer request for some/other-repo.
+
+Visit this link to act on it: https://bitbucket.org/some/other-repo/admin/transfer/f1234567812345678
+
+--
+
+
+Team email forwarding can be configured from the groups administration page:
+https://bitbucket.org/account/user/bricktamland/groups/

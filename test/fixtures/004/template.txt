@@ -1,0 +1,11 @@
+Intermittent slowness and maintenance pages with sendgrid.com : {{status}}
+
+
+We've monitored the site performance throughout the day, and have seen no further issues.
+
+
+
+--
+Incident Status: {{incident}}
+SendGrid Status: {{sg_status}}
+To unsubscribe: {{unsubscribe}}

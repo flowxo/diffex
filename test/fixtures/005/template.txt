@@ -1,0 +1,13 @@
+{{company}} ({{email}})'s payment of £131.71 has failed
+=======
+
+We received a message from your customer's bank indicating that they had insufficient funds at the time of collection.
+
+We have notified the customer of the failure, and you can retry the payment through your GoCardless dashboard.
+
+
+You can view and manage <a href="http://dashboard.gocardless.com/payments/PM123456123456">this payment</a> from [your GoCardless dashboard](http://dashboard.gocardless.com/payments/).
+
+
+-------------------
+GoCardless Ltd, 338-346 Goswell Road, London, EC1V 7LQ, 020 7183 8674

@@ -4,7 +4,8 @@
   "description": "A tool to extract key-value pairs by comparing a template with an input string.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "test:watch": "npm run test -- -w"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,6 @@
+{
+  "status": "Resolved",
+  "incident": "http://stspg.io/1q6P",
+  "sg_status": "http://status.sendgrid.com",
+  "unsubscribe": "http://status.sendgrid.com/?unsubscribe=abcdefgh"
+}

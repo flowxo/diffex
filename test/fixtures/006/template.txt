@@ -1,0 +1,11 @@
+Repository transfer request: {{repo}}
+
+{{name}} has initiated a transfer request for ronburgundy/anchroman-app.
+
+Visit this link to act on it: https://bitbucket.org/ronburgundy/anchroman-app/admin/transfer/f1234f4321f1234f4321
+
+--
+
+
+Team email forwarding can be configured from the groups administration page:
+https://bitbucket.org/account/user/{{user}}/groups/
