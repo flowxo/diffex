@@ -1,6 +1,6 @@
 {
   "name": "diffex",
-  "version": "1.0.0-alpha3",
+  "version": "1.0.0-beta.1",
   "description": "A tool to extract key-value pairs by comparing a template with an input string.",
   "main": "lib/index.js",
   "scripts": {
@@ -9,12 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/flowxo/diffex.git"
+    "url": "https://github.com/flowxo/diffex"
   },
   "keywords": [
     "diff",
     "extract",
-    "text"
+    "text",
+    "string"
   ],
   "author": "Tom Spencer <fiznool@gmail.com>",
   "license": "Apache-2.0",
@@ -36,7 +37,7 @@
     "jit-grunt": "^0.9.1",
     "mocha": "^2.3.4"
   },
-  "dependencies": {
-    "lodash": "^3.10.1"
+  "engines": {
+    "node": ">= 0.10"
   }
 }
